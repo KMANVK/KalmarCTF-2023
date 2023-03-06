@@ -8,3 +8,4 @@
 
 #kalmar{shuffle_shuff1e_can_you_k33p_tr4ck_of_where_th3_cards_are_shuffl3d_n0w}
 
+# Lưu ý : chỉ sử dụng với phiên bản mới nhất của wireshark 
