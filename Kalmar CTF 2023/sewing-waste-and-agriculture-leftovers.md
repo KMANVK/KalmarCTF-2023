@@ -6,26 +6,27 @@
 #C2 :
 + Dựa vào thư viện scapy 
 
-#from scapy.all import *
+```from scapy.all import *
 
-#packets = rdpcap('swaal.pcap')
+packets = rdpcap('swaal.pcap')
 
-#udp_data = b''.join(pkt.load for pkt in packets)
+udp_data = b''.join(pkt.load for pkt in packets)
 
-#segments = udp_data.split(b'\n')
+segments = udp_data.split(b'\n')
 
-#flag = {}
+flag = {}
 
-#for s in segments:
+for s in segments:
 
-    #pattern = re.compile(rb'[a-z0-9}{_]')
-    #matches = pattern.finditer(s)
+    pattern = re.compile(rb'[a-z0-9}{_]')
+    matches = pattern.finditer(s)
 
-    #for m in matches:
+    for m in matches:
         #flag[m.start()] = m.group()
 
-#flag = dict(sorted(flag.items())).values()
+flag = dict(sorted(flag.items())).values()
 
-#print(b''.join(flag).decode())
+print(b''.join(flag).decode())
+```
 
 ![image](https://user-images.githubusercontent.com/94669750/223004427-b7cbebb5-5f4f-46c2-ac5f-b23806793fcf.png)
