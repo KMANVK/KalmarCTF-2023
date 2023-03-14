@@ -6,7 +6,8 @@
 #C2 :
 + Dựa vào thư viện scapy 
 
-```from scapy.all import *
+```
+from scapy.all import *
 
 packets = rdpcap('swaal.pcap')
 
